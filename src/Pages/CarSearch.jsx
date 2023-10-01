@@ -110,8 +110,8 @@ const CarSearch = () => {
             {Array.from({ length: 3 }).map((_, index) => (
             <li
                 key={index}
-                className={`bg-white w-[20px] h-[20px] flex items-center justify-center rounded-md ${
-                index + 1 === currentPage ? 'font-bold bg-[#4999ED] text-white' : ''
+                className={` w-[20px] h-[20px] flex items-center justify-center rounded-md ${
+                index + 1 === currentPage ? 'font-bold bg-[#4999ed] text-white' : 'bg-white text-gray-700'
                 }`}
             >
                 <Link to={`/page/${index + 1}`}>{index + 1}</Link>
@@ -125,8 +125,8 @@ const CarSearch = () => {
             {Array.from({ length: Math.min(totalPages - 7, 3) }).map((_, index) => (
             <li
                 key={index}
-                className={`bg-white w-[20px] h-[20px] flex items-center justify-center rounded-md ${
-                index + 8 === currentPage ? 'font-bold bg-[#4999ED] text-white' : ''
+                className={` w-[20px] h-[20px] flex items-center justify-center rounded-md ${
+                index + 8 === currentPage ? 'font-bold bg-[#4999ed] text-white' : 'bg-white text-gray-700'
                 }`}
             >
                 <Link to={`/page/${index + 8}`}>{index + 8}</Link>
